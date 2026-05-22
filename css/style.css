@@ -556,3 +556,94 @@ nav a.active {
 .hero {
   animation: fadeIn 0.8s ease;
 }
+
+/* M10 FORMS */
+.form-card{
+  max-width: 640px;
+  /* Lebar maksimum form */
+  margin: 0 auto;
+  /* Tengah halaman */
+}
+
+fieldset{
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 24px;
+  background-color: #1e293b;
+}
+
+legend{
+  font-weight: 600;
+  font-size: 1.1 rem;
+  color: #f1f5f9;
+  padding: 0 10px;
+}
+
+.form-group{
+  margin-bottom: 16px;
+}
+
+.form-group label{
+  display: block;
+  /* Jadi full 1 baris */
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  margin-bottom: 6px;
+}
+
+/* Input, Select, Text Area */
+.form-group input,
+.form-group select,
+.form-group texarea {
+  width: 100%; 
+  /* Lebar memenuhi kontainer */
+  padding: 10px 14px;
+  border: 1px solid #334155;
+  background-color: #0f172a;
+  color: #e2e8f0;
+  font-family: inherit;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border color 0.3s;
+}
+
+input[type="date"]{
+  color-scheme: dark;
+}
+
+.form-row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #2563eb;
+}
+
+.form-group textarea{
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Tombol */
+.form-actions{
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.form-actions .btn{
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+.form-ations .btn-outline{
+  border: 2px solid #334155;
+  background: none;
+}
